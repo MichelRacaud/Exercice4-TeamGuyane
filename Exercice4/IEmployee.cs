@@ -8,6 +8,8 @@ namespace Exercice4
 {
 	public interface IEmployee : IPerson, IEquatable<IEmployee>, IComparable<IEmployee>
 	{
+
+
 		/// <summary>
 		/// Obtains the EID of the employee
 		/// </summary>
