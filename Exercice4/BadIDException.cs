@@ -8,6 +8,6 @@ namespace Exercice4
 {
 	public class BadIDException : Exception
 	{
-
+		
 	}
 }

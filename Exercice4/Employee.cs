@@ -15,6 +15,18 @@ namespace Exercice4
 		{
 			this.eid = eid;
 			this.name = name;
+			if (eid.Length != 3)
+			{
+				throw new BadIDException();
+			}
+			for (var i = 0; i <= 2; i++)
+			{
+				char chari = eid[i];
+				if (char.IsLetter(chari) == false)
+				{
+					throw new BadIDException();
+				}
+			}
 		}
 
 		int IComparable<IEmployee>.CompareTo(IEmployee other)

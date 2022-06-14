@@ -15,6 +15,21 @@ namespace Exercice4
 		{
 			this.cid = cid;
 			this.name = name;
+			bool cidbool;
+			int cidint;
+			for (var i = 0; i < cid.Length; i++)
+			{
+				char chari = cid[i];
+				if (char.IsDigit(chari) == false)
+                {
+					throw new BadIDException();
+				}
+			}
+			cidbool = int.TryParse(cid, out cidint);
+			if (cidbool == false)
+			{
+				throw new BadIDException();
+			}
 		}
 
 		int IComparable<ICustomer>.CompareTo(ICustomer other)
