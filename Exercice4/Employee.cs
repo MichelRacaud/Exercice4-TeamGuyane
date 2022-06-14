@@ -13,8 +13,6 @@ namespace Exercice4
 
 		public Employee(string eid, string name)
 		{
-			this.eid = eid;
-			this.name = name;
 			if (eid.Length != 3)
 			{
 				throw new BadIDException();
@@ -27,6 +25,8 @@ namespace Exercice4
 					throw new BadIDException();
 				}
 			}
+			this.eid = eid;
+			this.name = name;
 		}
 
 		int IComparable<IEmployee>.CompareTo(IEmployee other)

@@ -10,7 +10,7 @@ namespace Exercice4
 	{
 		string ILineReader.GetLine()
 		{
-			return Console.ReadLine();
+			throw new NotImplementedException();
 		}
 	}
 }

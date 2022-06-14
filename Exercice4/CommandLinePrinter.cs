@@ -10,7 +10,7 @@ namespace Exercice4
     {
         void IPrinter.PrintLine(string str)
         {
-            Console.WriteLine(str);
+            throw new NotImplementedException();
         }
     }
 }
